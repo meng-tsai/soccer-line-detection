@@ -1,0 +1,15 @@
+python train_two_pix2pix.py \
+    --dataroot ./datasets/soccer_seg_detection \
+    --batchSize 64 \
+    --name soccer_seg_detection_pix2pix \
+    --model two_pix2pix \
+    --which_model_netG unet_256 \
+    --which_direction AtoB --lambda_A 100 \
+    --dataset_mode two_aligned \
+    --no_lsgan \
+    --norm batch \
+    --pool_size 0 \
+    --output_nc 1 \
+    --phase1 train_phase_1 \
+    --phase2 train_phase_2 \
+    --save_epoch_freq 2

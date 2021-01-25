@@ -1,0 +1,15 @@
+python generate_line.py \
+    --dataroot ./datasets/generate \
+    --which_direction AtoB \
+    --loadSize 720 \
+    --fineSize 720 \
+    --display_winsize 720 \
+    --model two_pix2pix \
+    --name soccer_seg_detection_pix2pix \
+    --output_nc 1 \
+    --dataset_mode aligned \
+    --which_model_netG unet_256 \
+    --norm batch \
+    --how_many 2815 \
+    --loadSize 256 \
+    --batchSize 1
